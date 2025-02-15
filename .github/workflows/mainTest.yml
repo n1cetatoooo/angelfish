@@ -17,27 +17,27 @@ jobs:
       
       - name: Build armv7hl
         id: build_armv7hl
-        uses: coderus/github-sfos-build@master
+        uses: n1cetatoooo/angelfish
         with:
           release: 5.0.0.43
           arch: armv7hl
         
       - name: Build i486
         id: build_i486
-        uses: coderus/github-sfos-build@master
+        uses:  n1cetatoooo/angelfish
         with:
           release: 5.0.0.43
           arch: i486
 
       - name: Build aarch64
         id: build_aarch64
-        uses: coderus/github-sfos-build@master
+        uses:  n1cetatoooo/angelfish
         with:
           release: 5.0.0.43
           arch: aarch64
       
       - name: Upload build result
-        uses: actions/upload-artifact@v2
+        uses:  n1cetatoooo/angelfish
         with:
           name: rpm-build-result
           path: RPMS
